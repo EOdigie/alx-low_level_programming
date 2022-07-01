@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	int a;
-	int b;
+	int first_digit;
+	int second_digit;
 
-	for (a = 0; a < 9;a++)
+	for (first_digit = 0; first_digit < 9; first_digit++)
 	{
-		for (b = 0; b < 10; b++)
+		for (second_digit = 0; second_digit < 10; second_digit++)
 		{
-			if (a != b && a < b)
+			if (first_digit != second_digit && first_digit < second_digit)
 			{
-				putchar((a % 10)+'0');
-				putchar((b % 10)+'0');
+				putchar((first_digit % 10) + '0');
+				putchar((second_digit % 10) + '0');
 				{
-					if (a == 8)
+					if (first_digit == 8)
 						continue;
 				}
 				putchar (',');

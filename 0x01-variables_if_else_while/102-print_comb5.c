@@ -14,14 +14,14 @@ int main(void)
 	{
 		for (second = 0; second < 100; second++)
 		{
-			if (first !=second && first < second)
+			if (first != second && first < second)
 			{
 				putchar ((first / 10) + '0');
 				putchar ((first % 10) + '0');
 				putchar (' ');
 				putchar ((second / 10) + '0');
 				putchar ((second % 10)+ '0');
-				if (first==98)
+				if (first == 98)
 					continue;
 				putchar (',');
 				putchar (' ');
