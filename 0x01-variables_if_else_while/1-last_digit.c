@@ -1,5 +1,3 @@
-/* more headers goes there */
-
 /*
  * File: 0-positive_or_negative.c
  * Owner: Edugie Odigie
@@ -16,14 +14,13 @@
  *
  * Return: Always 0.
 */
-
 int main(void)
 {
 	int n;
-	srand(time(0));
 
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/*if statement*/
+	
 	if (n % 10 > 5)
 	{ 
 		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
