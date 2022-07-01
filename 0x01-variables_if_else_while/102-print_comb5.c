@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
- *Write a program that prints all possible combinations of two two-digit numbers.
- *The numbers should range from 0 to 99
- *The two numbers should be separated by a space
+ * main - prints all possible combinations of two two-digit numbers.
  *Return: Always 0.
  */
 int main(void)
@@ -20,7 +18,7 @@ int main(void)
 				putchar ((first % 10) + '0');
 				putchar (' ');
 				putchar ((second / 10) + '0');
-				putchar ((second % 10)+ '0');
+				putchar ((second % 10) + '0');
 				if (first == 98)
 					continue;
 				putchar (',');
