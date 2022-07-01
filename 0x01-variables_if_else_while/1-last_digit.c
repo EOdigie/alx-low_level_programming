@@ -1,9 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/*
+ * File: 0-positive_or_negative.c
+ * Owner: Edugie Odigie
+ */
+
+#include<stdio.h>
+#include <stdlib.h>
+#include<time.h>
+
+
+/**
+ * main - Prints a random number and states whether
+ *        it is positive, negative, or zero.
+ *
+ * Return: Always 0.
+*/
+
 int main(void)
 {
 	int n;
@@ -21,7 +34,7 @@ int main(void)
 	}
 	else if (n%10 == 0)
 	{
-		printf("Last diigit of %d is %d and is 0\n", n, n%10);
+		printf("Last digit of %d is %d and is 0\n", n, n%10);
 	}
 	
 	return (0);
