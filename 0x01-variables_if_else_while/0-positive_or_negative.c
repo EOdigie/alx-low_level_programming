@@ -1,11 +1,19 @@
+
+/*
+ * File: 0-positive_or_negative.c
+ * Owner: Edugie Odigie
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
-/* This program will assign a random number to the variable n each time it is executed.
- * Source code will print whether the number stored in the variable n is positive or negative.
+
+/**
+ * main - Prints a random number and states whether
+ *        it is positive, negative, or zero.
+ *
+ * Return: Always 0.
 */
 
 int main(void)
