@@ -1,12 +1,13 @@
 #include <stdio.h>
-/*Write a program that prints the alphabet in lowercase,
- *Print all the letters except q and e
- *followed by a new line.
+ /**
+ * main - Prints a alpabets in lowercase except q and e
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
 	char ch;
-	
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if (ch != 'q' && ch != 'e')
