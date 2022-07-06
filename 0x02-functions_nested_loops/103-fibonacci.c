@@ -9,12 +9,12 @@ int main(void)
 {
 	unsigned long int a, b, next, sum;
 
-	a = 1;
-	b = 2;
+	a = 0;
+	b = 1;
 	sum = 0;
 	next = 0;
 
-	while (next <= 4000000)
+	while (next < 4000000)
 	{
 		next = a + b;
 		a = b;
