@@ -11,6 +11,7 @@ int main(void)
 
 	a = 1;
 	b = 2;
+	i = 0;
 
 	while (i <= 50)
 	{
