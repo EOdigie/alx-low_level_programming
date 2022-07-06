@@ -13,14 +13,14 @@ int main(void)
 	b = 2;
 	i = 0;
 
-	while (i <= 50)
+	while (i < 50)
 	{
 		next = a + b;
 		a = b;
 		b = next;
 		printf("%lu", next);
 
-		if (i < 50)
+		if (i < 49)
 		{
 			printf(", ");
 		}
