@@ -12,14 +12,14 @@ int _atoi(char *s)
 	unsigned int n = 0;
 	int sign = 1;
 	int flag = 0;
-	
+
 	while (s[i])
 	{
 		if (s[i] == 45)
 		{
 			sign *= -1;
 		}
-		
+
 		else
 		{
 			while (s[i] >= 48 && s[i] <= 57)
