@@ -8,23 +8,26 @@
  */
 int _atoi(char *s)
 {
-	int c = 0;
+	int i = 0;
 	unsigned int n = 0;
 	int sign = 1;
 	int flag = 0;
-
-	while (s[c])
+	
+	while (s[i])
 	{
-		if (s[c] == 45)
+		if (s[i] == 45)
 		{
 			sign *= -1;
 		}
-
-		while (s[c] >= 48 && s[c] <= 57)
+		
+		else
 		{
-		       flag = 1;
-			n = (n * 10) + (s[c] - '0');
-			c++;
+			while (s[i] >= 48 && s[i] <= 57)
+			{
+				flag = 1;
+				n = (n * 10) + (s[i] - '0');
+				i++;
+			}
 		}
 
 		if (flag == 1)
@@ -32,7 +35,7 @@ int _atoi(char *s)
 			break;
 		}
 
-		c++;
+		i++;
 	}
 
 	n *= sign;
